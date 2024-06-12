@@ -5,7 +5,7 @@ body {
 .nav {
     box-sizing: border-box;
     display: flex;
-    background-color: #38393b;
+    background-color: #354159;
     width: 100%;
     align-items: center;
     justify-content: space-between;
@@ -42,11 +42,11 @@ body {
     text-decoration: none;
     color: white;
     font-family: "Roboto";
-    padding: 10px 25px 10px 25px;
+    padding: 10px 25px;
 }
 
 .pages > ul > a:hover {
-    background-color: #b9b9b9;
+    background-color: #9fbfff;
     height: 20px;
     -webkit-transition: background-color 500ms linear;
     -ms-transition: background-color 500ms linear;

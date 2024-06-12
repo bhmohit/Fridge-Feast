@@ -5,7 +5,7 @@ import { Box, Grid } from "@mui/material";
 export default function Learn() {
     const videoData = data.data;
     return (
-        <Box sx={{ flexGrow: 1 }} margin={10}>
+        <Box sx={{ flexGrow: 1 }} margin={"20px"}>
             <Grid container spacing={3} style={{ display: 'flex', flexWrap: 'wrap' }}>
                 {Object.keys(videoData).map(key => (
                     videoData[key].map((item, index) => (

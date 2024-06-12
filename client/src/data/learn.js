@@ -1,112 +1,83 @@
 const data = {
     "data": {
-        "YouTube": [
+        "Social Media": [
             {
-                "Channel": "America's Test Kitchen",
-                "Video": "How to Store Vegetables to Keep them Fresh Longer",
-                "Link": "https://www.youtube.com/watch?v=HShNP7Xm6RM",
-                "Description": "This video provides practical tips on how to store various vegetables to extend their shelf life."
+                "Image": "https://i.ytimg.com/vi/sc8U2xZe5ZI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBA6ZHqLvgC8XNjVK67NcqsTCgWsw",
+                "Platform": "YouTube",
+                "Video": "Thawing frozen food safely",
+                "Link": "https://www.youtube.com/watch?v=sc8U2xZe5ZI&ab_channel=News4JAXTheLocalStation",
+                "Description": "Thawing frozen items to eat can be dangerous. Melanie Lawson joins us to show us a few ways to safely thaw frozen food."
             },
             {
-                "Channel": "Tasty",
-                "Video": "7 Food Storage Hacks You NEED To Know",
-                "Link": "https://www.youtube.com/watch?v=dpzGc8s-C9o",
+                "Image": "https://i.ytimg.com/vi/gTNL66IcCPc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDzQq24_RrWFVd_LHPv0ga8kYIjCg",
+                "Platform": "YouTube",
+                "Video": "Where to Keep Your Food Storage and What Food Storage Containers to Use",
+                "Link": "https://www.youtube.com/watch?v=gTNL66IcCPc&ab_channel=SixFiguresUnder",
+                "Description": "A quick guide on what kind of containers should you use and where should you keep your food storage"
+            },
+            {
+                "Image": "https://p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/dcb5d2d053ef4e59ac284c747cf4d115_1705377901?x-expires=1718326800&x-signature=DU42PcFCpGeHwGLFMAvlm4G65BU%3D",
+                "Platform": "TikTok",
+                "Video": "7 Food Storage Hacks To Maximize food storage",
+                "Link": "https://www.tiktok.com/@mama_mila_/video/7324542245288332552",
                 "Description": "Tasty offers quick and easy food storage hacks that can help keep your food fresh and reduce waste."
             },
-            {
-                "Channel": "Bon Appétit",
-                "Video": "How to Keep Your Groceries Fresher for Longer | In the Kitchen With Bon Appétit",
-                "Link": "https://www.youtube.com/watch?v=I3w8u1XXaEs",
-                "Description": "This video provides tips and tricks for keeping groceries fresh, featuring a chef from Bon Appétit."
-            },
-            {
-                "Channel": "Serious Eats",
-                "Video": "How to Store Vegetables: A Quick Guide",
-                "Link": "https://www.youtube.com/watch?v=0UwU7NdOloU",
-                "Description": "A quick guide to storing vegetables to maintain their freshness and flavor."
-            },
-            {
-                "Channel": "Jillian Harris",
-                "Video": "My Top 10 Zero Waste Tips | Jillian Harris",
-                "Link": "https://www.youtube.com/watch?v=zPZ3dC-XoOs",
-                "Description": "Jillian Harris shares her top tips for reducing food waste, including storage and organization strategies."
-            },
-            {
-                "Channel": "Food52",
-                "Video": "How to Store Produce Properly",
-                "Link": "https://www.youtube.com/watch?v=Q8l-pvY2kvo",
-                "Description": "Learn how to properly store produce to extend its shelf life and maintain its quality."
-            },
-            {
-                "Channel": "Epicurious",
-                "Video": "Storage Tips: How to Keep Your Vegetables Fresh Longer",
-                "Link": "https://www.youtube.com/watch?v=9d6E0LGnxFw",
-                "Description": "Epicurious provides storage tips to keep your vegetables fresh for a longer time."
-            }
         ],
         "Online Course": [
             {
+                "Image": "https://img-b.udemycdn.com/course/240x135/863902_54c8.jpg",
                 "Platform": "Udemy",
-                "Course": "Food Preservation: How to Preserve Food at Home",
-                "Link": "https://www.udemy.com/course/food-preservation/",
-                "Description": "A comprehensive course on various food preservation methods, including canning, freezing, and drying."
+                "Course": "5 garden crops for food storage",
+                "Link": "https://www.udemy.com/course/5-garden-crops-for-food-storage/",
+                "Description": "Learn gardening for self sufficiency by growing your own food storage crops"
             },
             {
+                "Image": "https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/cf/cbbe4e168e7006fef73ad1ca05ea95/KingYeung-Course-Banner.jpeg?auto=format%2Ccompress%2C%20enhance&dpr=1&w=265&h=216&fit=crop&q=50",
                 "Platform": "Coursera",
                 "Course": "The Science of Gastronomy",
                 "Link": "https://www.coursera.org/learn/gastronomy",
                 "Description": "This course delves into the science behind food preparation and storage, helping you understand the best practices for preserving food."
             },
             {
+                "Image": "https://prod-discovery.edx-cdn.org/cdn-cgi/image/width=auto,height=auto,quality=75,format=webp/media/course/image/96b60bc7-4919-457c-b3a3-3605dab4f811-04555913dc81.small.jpg",
                 "Platform": "edX",
-                "Course": "Nutrition and Food Safety",
-                "Link": "https://www.edx.org/course/nutrition-and-food-safety",
-                "Description": "Learn about the principles of nutrition and food safety to ensure food quality and reduce waste."
+                "Course": "WageningenX: Nutrition and Health: Food Safety",
+                "Link": "https://www.edx.org/learn/nutrition/wageningen-university-research-nutrition-and-health-food-safety",
+                "Description": "Learn about bacteria, pesticides and health hazards present in food."
             },
-            {
-                "Platform": "FutureLearn",
-                "Course": "Understanding Food Labels and Preservation Techniques",
-                "Link": "https://www.futurelearn.com/courses/food-labels-preservation",
-                "Description": "This course covers the importance of food labels and various preservation techniques to reduce food waste."
-            },
-            {
-                "Platform": "Skillshare",
-                "Course": "Food Storage Solutions: How to Keep Food Fresh and Reduce Waste",
-                "Link": "https://www.skillshare.com/classes/Food-Storage-Solutions-How-to-Keep-Food-Fresh-and-Reduce-Waste/2048951876",
-                "Description": "Discover practical food storage solutions to keep food fresh longer and minimize waste."
-            }
         ],
         "Documentary": [
             {
+                "Image": "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXtkfjQvgrQ9TP7-Q2ZUULf1PoGu1c3Ig-1bKlA05qncQQMFTsbDM2j2F3bYtB0TB6b2Kzua3YHhGBx9ESpk0epnl6iCfzPpYus50Q4DLVB1GXVopC8h_AgfN49x4_2K7nhz.jpg?r=7c1",
                 "Platform": "Netflix",
                 "Documentary": "Rotten",
                 "Link": "https://www.netflix.com/title/80146284",
                 "Description": "A documentary series that explores the global food supply chain, including issues related to food waste and storage."
             },
+        ],
+        "Blog": [
             {
-                "Platform": "Amazon Prime Video",
-                "Documentary": "Just Eat It: A Food Waste Story",
-                "Link": "https://www.amazon.com/Just-Eat-Food-Waste-Story/dp/B00QK4A6T2",
-                "Description": "This documentary focuses on food waste and includes tips on how to better store food to prevent waste."
+                "Image": "https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/How-many-vegetables-and-fruit-do-you-need-resized.jpg",
+                "Channel": "UnlockedFood.ca",
+                "Video": "How to Store Vegetables to Keep them Fresh",
+                "Link": "https://www.unlockfood.ca/en/Videos/Kitchen-Tips-and-Food-Handling/Video-How-to-store-vegetables-to-keep-them-fresh.aspx",
+                "Description": "Here’s how to store your vegetables so they taste great and stay fresh longer. Keep these tips in mind when storing your vegetables."
             },
             {
-                "Platform": "Hulu",
-                "Documentary": "Food, Inc.",
-                "Link": "https://www.hulu.com/movie/food-inc-df43bc7d-f1ff-4049-8d38-631e0f7c2c8f",
-                "Description": "An eye-opening documentary that reveals the surprising and shocking truths about what we eat and how it's produced."
+                "Image": "https://www.canada.ca/content/canadasite/en/health-canada/services/general-food-safety-tips/food-safety-you/_jcr_content/par/mwscolumns/colpar-2/img_0_5_2_1/image.img.jpg/1480343882773.jpg",
+                "Channel": "Government of Canada",
+                "Video": "General food safety tips",
+                "Link": "https://www.canada.ca/en/health-canada/services/general-food-safety-tips.html",
+                "Description": "Protect your family with tips for handling, storing, cooking, barbecuing and reheating food."
             },
             {
-                "Platform": "Disney+",
-                "Documentary": "Wasted! The Story of Food Waste",
-                "Link": "https://www.disneyplus.com/movies/wasted-the-story-of-food-waste/6r7v7lxFk7fK",
-                "Description": "A documentary that takes you inside the world of food waste, featuring celebrity chefs who transform scraps into culinary delights."
+                "Image": "https://www.fda.gov/files/styles/main_image_1/public/Are-You-Storing-Food-Safely-CU-1600x900-02.png?itok=8nmhyaAo",
+                "Channel": "FDA",
+                "Video": "Are You Storing Food Safely?",
+                "Link": "https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
+                "Description": "Storing food properly can help prevent foodborne illnesses. Here are tips for safely storing food in your refrigerator, freezer, and cupboards."
             },
-            {
-                "Platform": "YouTube",
-                "Documentary": "The Clean Bin Project",
-                "Link": "https://www.youtube.com/watch?v=YGBpBmx3PKQ",
-                "Description": "A fun and engaging documentary that follows a couple's quest to live waste-free for a year."
-            }
+
         ]
     }
 };

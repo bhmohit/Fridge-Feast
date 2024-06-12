@@ -5,7 +5,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Grid from '@mui/material/Grid';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import SchoolIcon from '@mui/icons-material/School';
 import MovieIcon from '@mui/icons-material/Movie';
@@ -16,19 +15,26 @@ export default function Item(props) {
 
     const getIcon = (type) => {
         switch (type) {
-            case 'YouTube':
+            case 'Social Media':
                 return <YouTubeIcon />;
-            case 'Online Course':
-                return <SchoolIcon />;
             case 'Documentary':
                 return <MovieIcon />;
             default:
-                return null;
+                return <SchoolIcon />;
         }
     };
 
     return (
         <Card style={{ display: 'flex', flexDirection: 'column', height: '100%' }} variant="outlined">
+            {itemInfo.Image && (
+                <CardMedia
+                    component="img"
+                    height="140"
+                    style={{objectFit: "contain"}}
+                    image={itemInfo.Image}
+                    alt={itemInfo.Video || itemInfo.Course || itemInfo.Documentary}
+                />
+            )}
             <CardContent style={{ flex: 1 }}>
                 <Typography sx={{ fontSize: 12 }} color="text.secondary" gutterBottom>
                     {itemInfo.Location ? itemInfo.Location : type}{itemInfo.Platform ? ` - ${itemInfo.Platform}` : ""}
