@@ -4,12 +4,10 @@ import generateContent from '../data/generate';
 
 const Create = () => {
     const [ingredients, setIngredients] = useState('');
-    const [instructions, setInstructions] = useState('');
-    const [name, setName] = useState('');
-    const [cuisine, setCuisine] = useState('');
+    const [cuisine, setCuisine] = useState('Italian');
     const [prepTime, setPrepTime] = useState('');
     const [servings, setServings] = useState('');
-    const [difficulty, setDifficulty] = useState('');
+    const [difficulty, setDifficulty] = useState('Easy');
     const [recipe, setRecipe] = useState(null);
     const [loading, setLoading] = useState(false);
 
