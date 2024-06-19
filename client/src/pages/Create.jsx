@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import '../styles/Create.css';
+import generateContent from '../data/generate';
 
 const Create = () => {
     const [ingredients, setIngredients] = useState('');
+    const [instructions, setInstructions] = useState('');
+    const [name, setName] = useState('');
     const [cuisine, setCuisine] = useState('');
     const [prepTime, setPrepTime] = useState('');
     const [servings, setServings] = useState('');
@@ -10,20 +13,26 @@ const Create = () => {
     const [recipe, setRecipe] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    const handleGenerateRecipe = () => {
+    const handleGenerateRecipe = async () => {
         setLoading(true);
 
-        // Simulate recipe generation
-        setTimeout(() => {
+        try {
+            const interResult = await generateContent(ingredients, cuisine, prepTime, difficulty, servings);
+            const result = JSON.parse(interResult.replace(/^```json\s*([\s\S]*?)\s*```$/g, '$1'));
+
             setRecipe({
-                ingredients: ingredients.split(',').map(ing => ing.trim()),
-                cuisine,
-                prepTime,
-                servings,
-                difficulty,
+                name: result.name,
+                ingredients: result.ingredients,
+                instructions: result.instructions,
+                prepTime: result.prepTime,
+                servings: result.servingSize,
+                difficulty: difficulty
             });
+        } catch (error) {
+            console.error('Error generating recipe:', error);
+        } finally {
             setLoading(false);
-        }, 2000);
+        }
     };
 
     return (
@@ -67,18 +76,16 @@ const Create = () => {
                         className="input"
                     />
                 </div>
-                <div>
-                    <div className='input-container'>
-                        <label htmlFor="servings" className="label">Servings</label>
-                        <input
-                            id='servings'
-                            type="number"
-                            placeholder="Servings"
-                            value={servings}
-                            onChange={(e) => setServings(e.target.value)}
-                            className="input"
-                        />
-                    </div>
+                <div className='input-container'>
+                    <label htmlFor="servings" className="label">Servings</label>
+                    <input
+                        id='servings'
+                        type="number"
+                        placeholder="Servings"
+                        value={servings}
+                        onChange={(e) => setServings(e.target.value)}
+                        className="input"
+                    />
                 </div>
                 <div className="input-container">
                     <label htmlFor="difficulty" className="label">Difficulty</label>
@@ -100,14 +107,12 @@ const Create = () => {
 
             {recipe && (
                 <div className="recipe">
-                    <h2 className="subtitle">Your Recipe:</h2>
-                    {recipe.image && <img src={recipe.image} alt={recipe.name} className="recipe-image" />}
-                    <p className="text"><strong>Name:</strong> {recipe.name}</p>
-                    <p className="text"><strong>Ingredients:</strong> {recipe.ingredients.join(', ')}</p>
-                    <p className="text"><strong>Cuisine:</strong> {recipe.cuisine}</p>
-                    <p className="text"><strong>Preparation Time:</strong> {recipe.prepTime} minutes</p>
+                    <h2 className="subtitle">Your Recipe: {recipe.name}</h2>
+                    <p className="text"><strong>Preparation Time:</strong> {recipe.prepTime}</p>
                     <p className="text"><strong>Servings:</strong> {recipe.servings}</p>
                     <p className="text"><strong>Difficulty:</strong> {recipe.difficulty}</p>
+                    <p className="text"><strong>Ingredients:</strong> <ul>{recipe.ingredients.map((ing, idx) => <li key={idx}>{ing}</li>)}</ul></p>
+                    <p className="text"><strong>Instructions:</strong> <ol>{recipe.instructions.map((inst, idx) => <li key={idx}>{inst}</li>)}</ol></p>
                 </div>
             )}
         </div>
