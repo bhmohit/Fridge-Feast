@@ -16,11 +16,18 @@ const data = {
                 "Description": "A quick guide on what kind of containers should you use and where should you keep your food storage"
             },
             {
+                "Image": "https://yt3.googleusercontent.com/ytc/AIdro_n2LTB5nO_JiV2GPEHMVaQZMXD99T00eW7BC72euWfTHpU=s176-c-k-c0x00ffffff-no-rj",
+                "Platform": "YouTube",
+                "Video": "8 Effects of Hunger on Children in Conflict Zones",
+                "Link": "https://www.youtube.com/watch?v=6I0xiHy_9gg&ab_channel=UNICEFUSA",
+                "Description": "Children caught in conflict zones face threats to their physical and mental well-being not only from bombardment but also from lack of food and basic services."
+            },
+            {
                 "Image": "https://p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/dcb5d2d053ef4e59ac284c747cf4d115_1705377901?x-expires=1718326800&x-signature=DU42PcFCpGeHwGLFMAvlm4G65BU%3D",
-                "Platform": "TikTok",
-                "Video": "7 Food Storage Hacks To Maximize food storage",
-                "Link": "https://www.tiktok.com/@mama_mila_/video/7324542245288332552",
-                "Description": "Tasty offers quick and easy food storage hacks that can help keep your food fresh and reduce waste."
+                "Platform": "DW",
+                "Video": "The impact of hunger",
+                "Link": "https://www.dw.com/en/the-impact-of-hunger/video-50566044",
+                "Description": "This video describes the impact of hunger by Agricultural economist Joachim von Braun"
             },
         ],
         "Online Course": [
@@ -76,6 +83,13 @@ const data = {
                 "Video": "Are You Storing Food Safely?",
                 "Link": "https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely",
                 "Description": "Storing food properly can help prevent foodborne illnesses. Here are tips for safely storing food in your refrigerator, freezer, and cupboards."
+            },
+            {
+                "Image": "https://econofact.org/wp-content/uploads/2023/09/web_Hale_final.png",
+                "Channel": "ECONOFACT",
+                "Video": "The Importance of the Food Industry for Climate Change",
+                "Link": "https://econofact.org/the-importance-of-the-food-industry-for-climate-change",
+                "Description": "The effects of climate change are becoming more apparent in the increasing frequency of heat waves, floods, hurricanes, and wildfires worldwide."
             },
 
         ]

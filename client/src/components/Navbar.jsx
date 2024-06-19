@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div className="nav">
       <div className="branding">
-        <h1>🍽 Food Feast</h1>
+        <h1>🍽 Fridge Feast</h1>
       </div>
       <div className="pages">
         <ul>
